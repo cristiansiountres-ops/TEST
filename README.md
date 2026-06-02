@@ -99,6 +99,28 @@ For full architecture detail see [SPEC.md](SPEC.md).
 
 ---
 
+## Working with Claude Code
+
+This repo has a `CLAUDE.md` that gives Claude context about the project. If you have
+[Claude Code](https://claude.ai/code) installed, you can open a terminal in this folder
+and ask it questions or make changes:
+
+```bash
+# Start Claude Code in this project
+claude
+
+# Example prompts to try:
+# "Explain how the Drop class works"
+# "Add a --fps flag to control the frame rate"
+# "Why does the code use tty.setraw()?"
+```
+
+Claude will read `CLAUDE.md` automatically and understand the project without you
+having to explain it. This is a great way to learn — ask it to explain any part of
+the code you don't understand.
+
+---
+
 ## License
 
 MIT — do whatever you want with it.
