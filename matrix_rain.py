@@ -134,7 +134,7 @@ def run(cfg: Config):
 
             # handle keyboard
             key = _read_key()
-            if key == "q":
+            if key in ("q", "\x03"):  # q or Ctrl+C (raw mode intercepts SIGINT)
                 break
             elif key == "+":
                 cfg.speed = min(cfg.speed + 0.2, 5.0)
